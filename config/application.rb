@@ -22,8 +22,8 @@ module RailsApp
   end
 end
 
-require_relative '../../../config'
-Core.configure do |config|
+require 'yaba/core'
+Yaba::Core::Config.configure do |config|
   config.repository = :active_record
 end
 

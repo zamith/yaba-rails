@@ -1,13 +1,6 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-group :master do
-  file = '../../Gemfile'
-  if File.exists?(file)
-    eval File.read(file), binding
-  end
-end
-
 gem 'bitters'
 gem 'bourbon'
 gem 'bson_ext'
@@ -22,6 +15,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'slim-rails'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'yaba-core', github: 'zamith/yaba-core', require: false
 
 group :development do
   gem 'pry'

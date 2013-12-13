@@ -1,8 +1,4 @@
 require 'draper'
-require "#{APP_ROOT}/interactors/gets_posts"
-require "#{APP_ROOT}/interactors/creates_posts"
-require "#{APP_ROOT}/interactors/updates_posts"
-require "#{APP_ROOT}/interactors/deletes_posts"
 
 class PostsController < ApplicationController
   def index
